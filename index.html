@@ -1,4 +1,23 @@
 <style>
+    #nav-container {
+        display: flex;
+    }
+    
+    head #navbar2 {
+        display: flex;
+        margin: 0 0 0 auto;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    li {
+        display: inline;
+    }
+    
     body {
         position: relative;
     }
@@ -11,8 +30,12 @@
     }
     
     #search-bar {
-        text-align: center;
         padding: 5px;
+    }
+    
+    input {
+        width: 100%;
+        text-align: center;
     }
     
     .form {
@@ -20,7 +43,29 @@
         justify-content: center;
         padding: 5px;
     }
+    
+    #button1 {
+        margin-right: 70px;
+    }
 </style>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <div id="nav-container">
+        <ul id="navbar1">
+            <li><a href="about.asp">About</a></li>
+            <li><a href="news.asp">Store</a></li>
+            <li><a href="gmail.asp">Gmail</a></li>
+        </ul>
+        <ul id="navbar2">
+            <li><a href="images.asp">Images</a></li>
+            <li><a href="img.asp">Box</a></li>
+            <li><a href="photo.asp">Photo</a></li>
+        </ul>
+    </div>
+</head>
 
 <body>
     <div class="top">
@@ -36,3 +81,5 @@
         </div>
     </div>
 </body>
+
+</html>
