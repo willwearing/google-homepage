@@ -1,21 +1,36 @@
 <style>
+    html {
+        color: rgba(0, 0, 0, 0.87);
+        text-decoration: none;
+        font-size: 14;
+    }
+    
     #nav-container {
         display: flex;
     }
     
-    head #navbar2 {
-        display: flex;
-        margin: 0 0 0 auto;
+    a {
+        color: rgba(0, 0, 0, 0.87);
+        text-decoration: none;
+        font-size: 14;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    #navbar2 {
+        margin-left: auto;
     }
     
     ul {
         list-style-type: none;
-        margin: 0;
-        padding: 0;
     }
     
     li {
         display: inline;
+        padding: 10px;
+        color: gray;
     }
     
     body {
@@ -26,7 +41,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -100%);
     }
     
     #search-bar {
@@ -47,22 +62,35 @@
     #button1 {
         margin-right: 70px;
     }
+    
+    footer {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+    }
+    
+    #bottom-container {
+        display: flex;
+        background-color: rgba(159, 159, 159, 0.276);
+        margin: auto;
+    }
+    
+    #bottom2 {
+        margin-left: auto;
+    }
 </style>
-
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
     <div id="nav-container">
         <ul id="navbar1">
-            <li><a href="about.asp">About</a></li>
-            <li><a href="news.asp">Store</a></li>
-            <li><a href="gmail.asp">Gmail</a></li>
+            <li><a href="About">About</a></li>
+            <li><a href="Store">Store</a></li>
         </ul>
         <ul id="navbar2">
-            <li><a href="images.asp">Images</a></li>
-            <li><a href="img.asp">Box</a></li>
-            <li><a href="photo.asp">Photo</a></li>
+            <li><a href="gmail">Gmail</a></li>
+            <li><a href="images">Images</a></li>
+            <li><a href="img">Box</a></li>
+            <li><a href="photo">Photo</a></li>
         </ul>
     </div>
 </head>
@@ -82,4 +110,17 @@
     </div>
 </body>
 
-</html>
+<footer>
+    <div id="bottom-container">
+        <ul id="bottom1">
+            <li><a href="">Advertising</a></li>
+            <li><a href="">Business</a></li>
+            <li><a href="">How Search Works</a></li>
+        </ul>
+        <ul id="bottom2">
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Settings</a></li>
+        </ul>
+    </div>
+</footer>
