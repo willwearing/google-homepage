@@ -1,126 +1,246 @@
 <style>
-    html {
-        color: rgba(0, 0, 0, 0.87);
-        text-decoration: none;
-        font-size: 14;
+    body {
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-color: rgb(255, 255, 255);
+        background-image: none;
+        background-origin: padding-box;
+        background-size: auto;
+        color: rgb(34, 34, 34);
+        display: block;
+        font-family: arial, sans-serif;
+        font-size: 13px;
+        height: 460px;
+        margin: 0px;
     }
     
-    #nav-container {
-        display: flex;
+    .header .nav {
+        float: right;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
     
     a {
-        color: rgba(0, 0, 0, 0.87);
+        color: rgb(95, 99, 104);
+        display: inline-block;
         text-decoration: none;
-        font-size: 14;
+        font-family: arial, sans-serif;
+        font-size: 13px;
+        height: 40px;
+        line-height: 40px;
+        margin: 0;
+        padding-left: 13px;
+        padding-right: 13px;
+        text-decoration: none;
+        white-space: nowrap;
+        position: relative;
     }
     
     a:hover {
         text-decoration: underline;
     }
     
-    #navbar2 {
-        margin-left: auto;
-    }
-    
-    ul {
-        list-style-type: none;
-    }
-    
-    li {
-        display: inline;
-        padding: 10px;
-        color: gray;
-    }
-    
-    body {
-        position: relative;
-    }
-    
-    .top {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -100%);
-    }
-    
-    #search-bar {
-        padding: 5px;
-    }
-    
-    input {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .form {
+    #search {
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-color: rgb(255, 255, 255);
+        background-image: none;
+        background-origin: padding-box;
+        background-size: auto;
+        border-bottom-color: rgb(223, 225, 229);
+        border-radius: 24px;
+        border-image-outset: 0px;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+        border: 1px solid rgb(223, 225, 229);
+        box-shadow: none;
+        color: rgb(34, 34, 34);
         display: flex;
-        justify-content: center;
-        padding: 5px;
+        font-family: arial, sans-serif;
+        font-size: 13px;
+        height: 44px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        width: 582px;
+        z-index: auto;
     }
     
-    #button1 {
-        margin-right: 70px;
+    #search:hover {
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-color: rgb(255, 255, 255);
+        background-image: none;
+        background-origin: padding-box;
+        background-size: auto;
+        border-radius: 24px;
+        border: 1px solid rgba(223, 225, 229, 0);
+        border-image-outset: 0px;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+        box-shadow: rgba(32, 33, 36, 0.278431) 0px 1px 6px 0px;
+        color: rgb(34, 34, 34);
+        display: flex;
+        font-family: arial, sans-serif;
+        font-size: 13px;
+        height: 44px;
+        margin: 0 0 0 0;
+        width: 582px;
+        z-index: auto;
     }
     
-    footer {
+    .button {
+        -webkit-appearance: none;
+        -webkit-rtl-ordering: logical;
+        -webkit-user-select: none;
+        align-items: flex-start;
+        background-color: rgb(242, 242, 242);
+        background-image: -webkit-linear-gradient(top, rgb(245, 245, 245), rgb(241, 241, 241));
+        border-bottom-color: rgb(242, 242, 242);
+        border-radius: 4px;
+        border: 1px solid rgb(242, 242, 242);
+        border-image-outset: 0px;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+        box-sizing: border-box;
+        color: rgb(95, 99, 104);
+        cursor: pointer;
+        display: inline-block;
+        font-family: arial, sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-variant-caps: normal;
+        font-weight: normal;
+        height: 36px;
+        letter-spacing: normal;
+        line-height: 27px;
+        margin: 11px 4px 11px 4px;
+        min-width: 54px;
+        padding-bottom: 0px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 0px;
+        text-align: center;
+        text-indent: 0px;
+        white-space: pre;
+        width: 140.640625px;
+    }
+    
+    .button:hover {
+        background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+        background-color: #f8f8f8;
+        border: 1px solid #c6c6c6;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        color: #222;
+    }
+    
+    .content .img-div {
+        color: rgb(34, 34, 34);
+        display: block;
+        font-family: arial, sans-serif;
+        font-size: 13px;
+        height: 233px;
+        margin-top: 89px;
+        text-align: -webkit-center;
+    }
+    
+    .content img {
+        color: rgb(34, 34, 34);
+        display: inline;
+        font-family: arial, sans-serif;
+        font-size: 13px;
+        padding-top: 109px;
+        text-align: -webkit-center;
+    }
+    
+    .content form {
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-color: rgba(0, 0, 0, 0);
+        background-image: none;
+        background-origin: padding-box;
+        background-size: auto;
+        color: rgb(34, 34, 34);
+        display: block;
+        font-family: arial, sans-serif;
+        font-size: 13px;
+        margin: 0 270px 0 270px;
+        text-align: -webkit-center;
+    }
+    
+    .footer {
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-color: rgb(242, 242, 242);
+        background-origin: padding-box;
+        background-size: auto;
+        border-top-color: rgb(228, 228, 228);
+        border-top-style: solid;
+        border-top-width: 1px;
+        color: rgb(34, 34, 34);
+        display: block;
+        font-family: arial, sans-serif;
+        font-size: 13px;
+        height: 41px;
+        left: 0px;
+        line-height: 40px;
+        min-width: 980px;
         position: absolute;
         bottom: 0px;
-        width: 100%;
+        right: 0px;
     }
     
-    #bottom-container {
-        display: flex;
-        background-color: rgba(159, 159, 159, 0.276);
-        margin: auto;
-    }
-    
-    #bottom2 {
-        margin-left: auto;
+    .foot-right {
+        float: right;
     }
 </style>
 
+<!DOCTYPE html>
+<html>
+
 <head>
-    <div id="nav-container">
-        <ul id="navbar1">
-            <li><a href="About">About</a></li>
-            <li><a href="Store">Store</a></li>
-        </ul>
-        <ul id="navbar2">
-            <li><a href="gmail">Gmail</a></li>
-            <li><a href="images">Images</a></li>
-            <li><a href="img">Box</a></li>
-            <li><a href="photo">Photo</a></li>
-        </ul>
-    </div>
+    <link rel="stylesheet" href="style.css">
+    <title>WillW Google</title>
 </head>
 
 <body>
-    <div class="top">
-        <div id="google-logo-img">
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    <section class="header">
+        <div class="nav">
+            <a href="#gmail">Gmail</a>
+            <a href="#images">Images</a>
+
         </div>
-        <div id="search-bar">
-            <input type="text" placeholder="Enter Search Here">
+    </section>
+    <section class="content">
+        <div class="img-div">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo image">
         </div>
-        <div class="form">
-            <div id="button1"> <button type="button">Google Search</button></div>
-            <div id="button2"> <button type="button">I'm Feeling Lucky</button></div>
+        <form action="POST">
+            <input id="search" type="text"><br>
+            <input class="button" type="submit" value="Search Google">
+            <input class="button" type="submit" value="Im Feeling Lucky">
+        </form>
+    </section>
+    <section class="footer">
+        <div class="foot">
+            <a href="#adds">Adds</a>
+            <a href="#business">Business</a>
+            <a href="#about">About</a>
+            <div class="foot-right">
+                <a href="#privacy">Privacy</a>
+                <a href="#terms">Terms</a>
+                <a href="#settings">Settings</a>
+            </div>
         </div>
-    </div>
+    </section>
 </body>
 
-<footer>
-    <div id="bottom-container">
-        <ul id="bottom1">
-            <li><a href="">Advertising</a></li>
-            <li><a href="">Business</a></li>
-            <li><a href="">How Search Works</a></li>
-        </ul>
-        <ul id="bottom2">
-            <li><a href="">Privacy</a></li>
-            <li><a href="">Terms</a></li>
-            <li><a href="">Settings</a></li>
-        </ul>
-    </div>
-</footer>
+</html>
